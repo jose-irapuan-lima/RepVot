@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: worker-app-pod-ira
+  labels:
+    name: worker-app-pod-ira
+    app: demo-voting-app-ira
+
+spec:
+  containers:
+    - name: worker-app-ira
+      image: dockersamples/examplevotingapp_worker
+

@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: redis-pod-ira
+  labels:
+    name: redis-pod-ira
+    app: demo-voting-app-ira
+
+spec:
+  containers:
+    - name: redis-ira
+      image: redis
+      ports:
+        - containerPort: 6379

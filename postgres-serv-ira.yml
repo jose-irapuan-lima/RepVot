@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: db
+  labels:
+    name: db-serv-ira
+    app: demo-voting-app-ira
+
+spec:
+  ports:
+    - port: 5432
+      targetPort: 5432
+  selector:
+    name: postgres-pod-ira
+    app: demo-voting-app-ira
+
+
+
+

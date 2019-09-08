@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: postgres-pod-ira
+  labels:
+    name: postgres-pod-ira
+    app: demo-voting-app-ira
+
+spec:
+  containers:
+    - name: postgres-ira
+      image: postgres:9.4
+      ports:
+        - containerPort: 5432
